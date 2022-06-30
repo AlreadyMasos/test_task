@@ -31,8 +31,6 @@ app.config.update({
 
 from models import *
 
-Base.metadata.create_all(bind=engine)
-
 
 @app.route('/all_books', methods=['GET'])
 @marshal_with(BookSchema(many=True))

@@ -1,4 +1,4 @@
-from main import db, session, Base
+from main import db, Base
 
 class Book(Base):
     __tablename__ = 'books'
