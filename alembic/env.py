@@ -20,10 +20,10 @@ current_path = os.path.dirname(os.path.abspath(__file__))
 ROOT_PATH = os.path.join(current_path, '..')
 sys.path.append(ROOT_PATH)
 
-from main import engine, Base
+from main import engine, Book
 from models import *
 
-target_metadata = Base.metadata
+target_metadata = Book.metadata
 
 # other values from the config, defined by the needs of env.py,
 # can be acquired:
